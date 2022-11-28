@@ -4,6 +4,8 @@
 
 .App-main {
   background-color: black;
+  background-image: url("../public/demonic-tutor-1024x802.png");
+  background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,4 +13,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.quip {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 100px;
 }
