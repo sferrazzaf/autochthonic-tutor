@@ -15,11 +15,24 @@ const getRandomQuip = () => {
 }
 
 function App() {
+  // TODO: Turn into proper React components
   return (
     <div className="App">
-      <main className="App-main">
-        <p className="quip">{getRandomQuip()}</p>
-        <input type="text"></input> 
+      <main className="App-main grid">
+        <header className="span-two-grid-columns"></header>
+        <div className="search-input-container">
+          <div className="search-input-content">
+            <p className="quip">{getRandomQuip()}</p>
+            <input className="searchbar" type="text"></input> 
+          </div> 
+        </div>
+        <div className="search-result">
+          {/* TODO: Add search result components */}
+          <p className="content-placeholder">
+            Search result content goes here!
+          </p>
+        </div>
+        <footer classname="span-two-grid-columns"></footer>
       </main>
     </div>
   );
